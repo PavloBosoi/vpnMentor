@@ -1,0 +1,65 @@
+/* ==|====================
+   Module/Responsive
+   ======================= */
+
+@media only screen and (max-width: 2000px) {
+
+}
+
+@media only screen and (max-width: 1680px) {
+
+}
+
+@media only screen and (max-width: 1366px) {
+
+}
+
+@media only screen and (max-width: 1280px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .rec-top-side{
+        margin: 0;
+    }
+    .rec-table-top{
+        display: none;
+    }
+    .rec-table-item{
+        flex-wrap: wrap;
+    }
+    .rec-table-score{
+        margin: 20px 0 0 25%;
+    }
+    .rec-table-more{
+        margin: 20px 0 0 0;
+    }
+    .rec-best i {
+        margin: 0 5px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .rec-table-provider,
+    .rec-table-features,
+    .rec-table-price,
+    .rec-table-score,
+    .rec-table-more{
+        margin-top: 20px;
+    }
+    .rec-table-score{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 640px){
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}

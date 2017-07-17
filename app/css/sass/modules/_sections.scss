@@ -1,0 +1,197 @@
+/* ==|====================
+   Module/Sections
+   ======================= */
+.rec-content{
+    color: $color1;
+    font-size: 15px;
+    line-height: 20px;
+    background-color: #eee;
+}
+
+/*===REC-TOP===*/
+.rec-top{
+    @include row(flex,false);
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.rec-top-side{
+    @include col(2);
+    @include col-md(2,false);
+}
+
+.rec-advantages{
+    color: $color1;
+    margin: 15px 0 0 0;
+    li{
+        position: relative;
+        &::before{
+            content: '\f005';
+            color: $color2;
+            margin: 0 5px 0 0;
+            font-size: 9px;
+            font-family: fontawesome;
+        }
+    }
+}
+.rec-best{
+    margin: 15px 0 0 0;
+    display: flex;
+    align-items: center;
+    span{
+        margin: 0 5px 0 0;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    i{
+        margin: 0 8px;
+    }
+}
+.rec-deco-image{
+    text-align: right;
+}
+
+
+/*===REC-TABLE===*/
+.rec-middle{
+    margin: 15px 0 0 0;
+}
+.rec-table-top{
+    display: flex;
+    background-color: #2e436b;
+    span{
+        font-weight: bold;
+        text-align: center;
+        padding: 10px 0;
+        color: #fff;
+    }
+}
+
+.rec-table-item{
+    display: flex;
+    padding: 20px 0;
+    margin: 5px 0 0 0;
+    align-items: center;
+    background-color: #fff;
+    transition: all .5s linear;
+    &:hover{
+        background-color: #c6fffe;
+    }
+}
+.rec-col-1{
+    @include col(1);
+}
+.rec-col-2{
+    @include col(2);
+}
+.rec-col-3{
+    @include col(3);
+}
+.rec-col-4{
+    @include col(4);
+}
+.rec-col-5{
+    @include col(5);
+}
+.rec-table-provider{
+    @include col-sm(2);
+    text-align: center;
+    a{
+        font-size: 12px;
+        text-decoration: underline;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+.rec-stars{
+    background: transparent url("../images/stars.png") no-repeat 0 0;
+    width: 95px;
+    height: 15px;
+    margin: 15px auto;
+    position: relative;
+    span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: transparent url("../images/stars-h.png") no-repeat 0 0;
+    }
+}
+
+.rec-table-features{
+    @include col-sm(2);
+    p{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    h4{
+        font-size: 18px;
+        margin: 20px 0 0;
+    }
+}
+.rec-best-table{
+    span{
+        font-weight: normal;
+    }
+}
+
+.rec-table-price{
+    @include col-sm(2);
+    text-align: center;
+}
+.rec-price-item{
+    margin: 7px 0;
+}
+.rec-price-old{
+    color: #9b9b9b;
+    font-size: 15px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 55%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #9b9b9b;
+        z-index: 2;
+    }
+}
+.rec-price-new{
+    display: block;
+    color: $color1;
+    font-weight: bold;
+    font-size: 32px;
+}
+.rec-price-month{
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+}
+.rec-price-save{
+    background-color: $color2;
+    width: 90px;
+    font-size: 12px;
+    padding: 1px 0;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
+
+.rec-table-score{
+    @include col-md(4);
+    @include col-sm(2);
+    text-align: center;
+    span{
+        font-size: 32px;
+        color: $color1;
+        font-weight: bold;
+    }
+}
+
+.rec-table-more{
+    @include col-md(2);
+    @include col-sm(2);
+    text-align: center;
+}
