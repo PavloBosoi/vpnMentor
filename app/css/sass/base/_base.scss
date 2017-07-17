@@ -2,7 +2,6 @@
    Base
    =========================== */
 @import "sprite-build/sprite.css";
-@import "sprite-build/sprite-svg.css";
 
 *{
     margin: 0;
@@ -13,17 +12,12 @@
 }
 html {
     height: 100%;
-    font-size: 10px;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
     display: block;
 }
 body{
-    width: 100%;
-    height: 100%;
     font-family: $font1;
-    font-weight: 300;
-    @include fluidFontSize(14px,18px,480px,1680px,28px,16px);
 }
 li{
     list-style-type: none;
@@ -47,4 +41,8 @@ textarea{
 img{
     max-width: 100%;
     height: auto;
+}
+.icon{
+    display: inline-block;
+    background-repeat: no-repeat;
 }

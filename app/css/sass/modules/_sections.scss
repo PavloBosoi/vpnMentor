@@ -1,6 +1,7 @@
 /* ==|====================
    Module/Sections
    ======================= */
+
 .rec-content{
     color: $color1;
     font-size: 15px;
@@ -17,15 +18,20 @@
 .rec-top-side{
     @include col(2);
     @include col-md(2,false);
+    @include col-sm(1,false);
 }
 
 .rec-advantages{
     color: $color1;
     margin: 15px 0 0 0;
     li{
+        padding: 0 0 0 15px;
         position: relative;
         &::before{
             content: '\f005';
+            position: absolute;
+            top: 2px;
+            left: 0;
             color: $color2;
             margin: 0 5px 0 0;
             font-size: 9px;
@@ -42,8 +48,13 @@
         font-weight: bold;
         white-space: nowrap;
     }
+    p{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
     i{
-        margin: 0 8px;
+        margin: 5px;
     }
 }
 .rec-deco-image{
@@ -92,8 +103,10 @@
 .rec-col-5{
     @include col(5);
 }
+/*---rec-provider---*/
 .rec-table-provider{
     @include col-sm(2);
+    @include col-xs(1);
     text-align: center;
     a{
         font-size: 12px;
@@ -118,8 +131,10 @@
     }
 }
 
+/*---rec-features---*/
 .rec-table-features{
     @include col-sm(2);
+    @include col-sl(1);
     p{
         font-size: 14px;
         font-weight: bold;
@@ -135,8 +150,10 @@
     }
 }
 
+/*---rec-price---*/
 .rec-table-price{
     @include col-sm(2);
+    @include col-xs(1);
     text-align: center;
 }
 .rec-price-item{
@@ -179,9 +196,11 @@
     display: inline-block;
 }
 
+/*---rec-score---*/
 .rec-table-score{
     @include col-md(4);
     @include col-sm(2);
+    @include col-xs(1);
     text-align: center;
     span{
         font-size: 32px;
@@ -190,8 +209,10 @@
     }
 }
 
+/*---rec-more---*/
 .rec-table-more{
     @include col-md(2);
     @include col-sm(2);
+    @include col-xs(1);
     text-align: center;
 }

@@ -31,15 +31,21 @@
     }
     .rec-table-item{
         flex-wrap: wrap;
+        justify-content: center;
     }
     .rec-table-score{
         margin: 20px 0 0 25%;
+        span{
+            border-radius: 50%;
+            border: 1px solid $color1;
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            display: inline-block;
+        }
     }
     .rec-table-more{
         margin: 20px 0 0 0;
-    }
-    .rec-best i {
-        margin: 0 5px;
     }
 }
 
@@ -54,6 +60,21 @@
     .rec-table-score{
         margin-left: 0;
     }
+    .rec-top-img{
+        display: none;
+    }
+    .rec-table-price{
+        order: 1;
+    }
+    .rec-table-features{
+        order: 2;
+    }
+    .rec-table-price{
+        order: 3;
+    }
+    .rec-table-more{
+        order: 4;
+    }
 }
 
 @media only screen and (max-width: 640px){
@@ -63,3 +84,9 @@
 @media only screen and (max-width: 480px) {
 
 }
+/*===Additional style===*/
+.header,
+.footer{
+    background-color: #eee;
+}
+/*===Additional style===*/
